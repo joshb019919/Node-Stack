@@ -12,13 +12,14 @@
 #ifndef __CSC232_COMMON_H_
 #define __CSC232_COMMON_H_
 
+#include <stdexcept>
+#include <string>
+#include <iostream>
 #include "stack_interface.h"
 #include "dnode.h"
 #include "node_stack.h"
 #include "array_stack.h"
 
-#include <stdexcept>
-#include <string>
 
 class NullHeadException : public std::logic_error
 {

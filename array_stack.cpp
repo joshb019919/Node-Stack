@@ -9,9 +9,6 @@
  *
  */
 
-#include <stdexcept>
-#include <iostream>
-#include <string>
 #include "array_stack.h"
 
 namespace csc232
@@ -49,7 +46,7 @@ namespace csc232
     template<typename T>
     bool ArrayStack<T>::isFull() const
     {
-        return top < SIZE - 1;
+        return top >= SIZE - 1;
     }
 
     /**
@@ -116,7 +113,10 @@ namespace csc232
     template<typename T>
     T ArrayStack<T>::peek() const
     {
-        assert(!isEmpty());
+        if (isEmpty())
+        {
+            return T{};
+        }
         return array[top];
     }
 

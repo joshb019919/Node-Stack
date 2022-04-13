@@ -9,7 +9,6 @@
  *
  */
 
-#include <stdexcept>
 #include "node_stack.h"
 
 namespace csc232
