@@ -26,12 +26,12 @@ namespace csc232
         public:
             NodeStack();
             bool isEmpty() const override;
-            DoublyLinkedNode<T>* peek() const;
+            T peek() const;
             bool pop() override;
             bool push(DoublyLinkedNode<T> *node);
             void clear() override;
             T GetItem(const DoublyLinkedNode<T> *node) const;
-
+            ~NodeStack() override;
     };
 }
 

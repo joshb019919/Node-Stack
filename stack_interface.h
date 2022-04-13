@@ -18,6 +18,10 @@ namespace csc232
     class StackInterface
     {
         public:
+        /**
+         * @brief Pure virtual methods to be overwritten in the source file.
+         *
+         */
             virtual bool isEmpty() const = 0;
             virtual bool pop() = 0;
             virtual void clear() = 0;

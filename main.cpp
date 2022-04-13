@@ -1,3 +1,14 @@
+/**
+ * @file main.cpp
+ * @author Josh Borthick (github.com/joshb019919)
+ * @brief Program to simulate a client to the stacks.
+ * @version 1.0
+ * @date 2022-04-13
+ *
+ * @copyright Copyright (c) 2022
+ *
+ */
+
 #include <iostream>
 #include <string>
 
@@ -26,6 +37,7 @@ using namespace csc232;
 
 int main(void)
 {
+    // An integer array set to size 10
     int arr[10];
     int a = 0;
     int b = 1;

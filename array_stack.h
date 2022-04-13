@@ -1,8 +1,8 @@
 /**
  * @file array_stack.h
- * @author your name (you@domain.com)
- * @brief
- * @version 0.1
+ * @author Josh Borthick (github.com/joshb019919)
+ * @brief ArrayStack class declarations for array_stack.cpp.
+ * @version 1.0
  * @date 2022-04-13
  *
  * @copyright Copyright (c) 2022
@@ -14,6 +14,10 @@
 #ifndef __ARRAY_STACK_CUSTOM_
 #define __ARRAY_STACK_CUSTOM_
 
+/**
+ * @brief Stack implementations for an array-based collection.
+ *
+ */
 namespace csc232
 {
     template<typename T>
@@ -31,7 +35,7 @@ namespace csc232
             bool isEmpty() const override;
             bool push(const T& item);
             bool pop() override;
-            T peek() const : throw ;
+            T peek() const;
             void clear() override;
     };
 }
